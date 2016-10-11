@@ -1,0 +1,6 @@
+languageCode = "en-us"
+baseurl = "https://kidonchu.github.io/something-new-every-other-week/"
+title = "Something New Every Other Week"
+
+[Params]
+	Author = "Kidon Chu"
