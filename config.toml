@@ -80,13 +80,14 @@ paginate = 3
 [[menu.main]]
     name = "Home"
     url = "/"
-    identifier = "fa fa-newspaper-o"
+    identifier = "fa fa-home"
     weight = 1
 
-# [[menu.main]]
-#     name = "Categories"
-#     url = "/categories"
-#     weight = 2
+[[menu.main]]
+    name = "TODO"
+    url = "/todo"
+	identifier = "fa fa-list"
+    weight = 2
 
 # [[menu.main]]
 #     name = "About"
