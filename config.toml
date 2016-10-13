@@ -22,7 +22,7 @@ paginate = 3
 
 # Optional Params
     categoriesByCount    = true
-    includeReadingTime   = true
+    includeReadingTime   = false
     # The set of favicons used are based on the write-up from this link:
     # https://github.com/audreyr/favicon-cheat-sheet
     # Please see the favicon partial template for more information
@@ -80,13 +80,14 @@ paginate = 3
 [[menu.main]]
     name = "Home"
     url = "/"
-    identifier = "fa fa-newspaper-o"
+    identifier = "fa fa-home"
     weight = 1
 
-# [[menu.main]]
-#     name = "Categories"
-#     url = "/categories"
-#     weight = 2
+[[menu.main]]
+    name = "TODO"
+    url = "/todo"
+	identifier = "fa fa-list"
+    weight = 2
 
 # [[menu.main]]
 #     name = "About"
