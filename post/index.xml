@@ -1,21 +1,62 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Post-rsses on Something New Every Other Week</title>
-    <link>https://kidonchu.github.io/something-new-every-other-week/post/index.xml</link>
-    <description>Recent content in Post-rsses on Something New Every Other Week</description>
+    <title>Post-rsses on Something New</title>
+    <link>https://kidonchu.github.io/post/index.xml</link>
+    <description>Recent content in Post-rsses on Something New</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Oct 2016 23:25:20 -0500</lastBuildDate>
-    <atom:link href="https://kidonchu.github.io/something-new-every-other-week/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Oct 2016 07:31:14 -0500</lastBuildDate>
+    <atom:link href="https://kidonchu.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>welcome</title>
-      <link>https://kidonchu.github.io/something-new-every-other-week/post/welcome/</link>
-      <pubDate>Mon, 10 Oct 2016 23:25:20 -0500</pubDate>
+      <title>Intro</title>
+      <link>https://kidonchu.github.io/post/intro/</link>
+      <pubDate>Tue, 11 Oct 2016 07:31:14 -0500</pubDate>
       
-      <guid>https://kidonchu.github.io/something-new-every-other-week/post/welcome/</guid>
-      <description>&lt;p&gt;This is a test content.&lt;/p&gt;
+      <guid>https://kidonchu.github.io/post/intro/</guid>
+      <description>
+
+&lt;h3 id=&#34;having-fun&#34;&gt;Having Fun?&lt;/h3&gt;
+
+&lt;p&gt;The week started as normal. Just another Monday, feeling not too excited, with this irritating
+thought in my head that had been lingering for a while.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Am I having fun with my life?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I can go on and on about how happy I am with my lovely wife and daughter. But when the question
+becomes whether I am having fun, my answer is &amp;ldquo;I don&amp;rsquo;t know&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;Working on my side projects is fun, but it has its limit. Often times, when I come home, I don&amp;rsquo;t
+even turn on my laptop because of the exhaustion from the work. It&amp;rsquo;s not that the programming is not
+fun; rather, my brain just gets tired out at the end of the day and no longer wants to deal with any
+digital stuff.&lt;/p&gt;
+
+&lt;p&gt;So, to freshen up, I decided to start a journal with a theme, &lt;strong&gt;SOMETHING NEW&lt;/strong&gt;. This will be the journal of
+my attempts to try something new every other week, or every week if my life permits. I have no idea
+what I would want to try in the next few weeks but I&amp;rsquo;m sure something will come up and I will have
+plenty in my &lt;a href=&#34;https://kidonchu.github.io/todo&#34;&gt;TODO&lt;/a&gt; list.&lt;/p&gt;
+
+&lt;h3 id=&#34;definition-of-something-new&#34;&gt;Definition of &lt;em&gt;Something New&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;Here are my definitions of &lt;em&gt;Something New&lt;/em&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Things I&amp;rsquo;ve never tried, no matter how trivial they are&lt;/li&gt;
+&lt;li&gt;Things I&amp;rsquo;ve tried, but forgotten how I felt while doing them&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Execution time is not a concern. It can be an one-day activity or something that requires weeks of
+commitments.&lt;/p&gt;
+
+&lt;p&gt;After writing all these, this idea of &lt;strong&gt;Something New&lt;/strong&gt; almost sounds like a bucket list with one
+more factor added to it: emotions and feelings. &lt;em&gt;New&lt;/em&gt; in a sense that &amp;ldquo;this &lt;em&gt;something&lt;/em&gt; feels new&amp;rdquo;.
+This, of course, includes something I have never tried because I don&amp;rsquo;t know the feeling of something
+I&amp;rsquo;ve never done before.&lt;/p&gt;
+
+&lt;p&gt;Hopefully I can continue acting on this idea and bring fresh feelings to my life.&lt;/p&gt;
 </description>
     </item>
     
