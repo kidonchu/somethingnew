@@ -1,7 +1,7 @@
 +++
 type = "todo"
 title = "TODO"
-draft = true
+draft = false
 date = "2016-10-12T07:31:14-05:00"
 description = "List of fun things I'd like to try"
 
@@ -31,3 +31,4 @@ description = "List of fun things I'd like to try"
 - Video recording with drone
 - Woodwork to create a table
 - Zorbing
+- Take photos of 10 things that make me happy
