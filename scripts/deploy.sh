@@ -10,6 +10,8 @@ if [ ! -d "$SOURCE_DIR" ]; then
 fi
  
 REPO=$(git config remote.origin.url)
+
+echo "Travis Build ID: $TRAVIS_BUILD_ID"
  
 if [ -n "$TRAVIS_BUILD_ID" ]; then
   # When running on Travis we need to use SSH to deploy to GitHub
@@ -52,13 +54,18 @@ if [ -n "$TRAVIS_BUILD_ID" ]; then
 fi
  
 REPO_NAME=$(basename $REPO)
+echo "REPO_NAME: $REPO_NAME"
 TARGET_DIR=$(mktemp -d /tmp/$REPO_NAME.XXXX)
+echo "TARGET_DIR: $TARGET_DIR"
 REV=$(git rev-parse HEAD)
+echo "REV: $REV"
+echo "Cloning"
 git clone --branch ${TARGET_BRANCH} ${REPO} ${TARGET_DIR}
 rsync -rt --delete --exclude=".git" --exclude=".travis.yml" $SOURCE_DIR/ $TARGET_DIR/
 cd $TARGET_DIR
 git add -A .
 git commit --allow-empty -m "Built from commit $REV"
+echo "Doing git push $REPO $TARGET_BRANCH"
 git push $REPO $TARGET_BRANCH
 
 git config --global user.name "$GIT_NAME"
