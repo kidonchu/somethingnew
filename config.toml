@@ -8,7 +8,7 @@ canonifyurls = true
 preserveTaxonomyNames = true
 paginate = 3
 # disqusShortname = ""
-# googleAnalytics = ""
+googleAnalytics = "UA-85719930-1"
 
 [params]
     # Sets the meta tag description, usually reserved for the main page
