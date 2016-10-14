@@ -1,8 +1,9 @@
 languageCode = "en-us"
-# baseurl = "https://kidonchu.github.io/something-new-every-other-week/"
+# baseurl = "https://kidonchu.github.io/somethingnew/"
 baseurl = "https://kidonchu.github.io/"
 title = "Something New"
 theme = "hugo-future-imperfect"
+canonifyurls = true
 
 preserveTaxonomyNames = true
 paginate = 3
