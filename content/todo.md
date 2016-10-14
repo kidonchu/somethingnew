@@ -7,19 +7,21 @@ description = "List of fun things I'd like to try"
 
 +++
 
-- Bowling
-- Paintbal shooting
-- Surfing
 - Bake chocolate chip cookies
+- Bowling
 - Camping
 - Create mug with clay
 - Dye my hair
 - Fly kite
 - Half Marathon
+- Halloween with costume
 - Kayaking
 - Marathon
 - Paddleboarding
-- Pumkin Craving
+- Paintbal shooting
+- Play Pandemic board game
+- Pumkin Carving
+- Reading novel
 - Rock climbing
 - Salar de Uyuni
 - Scuba Diving
@@ -27,8 +29,10 @@ description = "List of fun things I'd like to try"
 - Singapore Marina Bay Infinity Pool (<a href="http://www.marinabaysands.com/sands-skypark/infinity-pool.html" target="_blank">link</a>)
 - Skateboarding
 - Sleeping in hammock
+- Surfing
+- Swim in Joffre Lake
 - Swimming
+- Take photos of 10 things that make me happy
 - Video recording with drone
 - Woodwork to create a table
 - Zorbing
-- Take photos of 10 things that make me happy
