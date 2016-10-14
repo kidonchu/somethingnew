@@ -21,5 +21,8 @@ script:
     - git clone https://github.com/jpescador/hugo-future-imperfect ./themes/hugo-future-imperfect
     - hugo
 
-after_success:
-    - ./scripts/deploy.sh
+deploy:
+    provider: script
+    script: ./scripts/deploy.sh
+    on:
+        branch: master
