@@ -1,6 +1,4 @@
 #!/bin/bash
-echo "Error"
-exit 1
 set -e
 
 # Deploy built docs to this branch
