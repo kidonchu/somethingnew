@@ -50,6 +50,36 @@ googleAnalytics = "UA-85719930-1"
 	stumbleupon = false
 	email       = false
 
+[params.social]
+	github          = "kidonchu"
+	bitbucket       = ""
+	jsfiddle        = ""
+	codepen         = ""
+	foursquare      = ""
+	dribbble        = ""
+	deviantart      = ""
+	behance         = ""
+	flickr          = ""
+	instagram       = ""
+	youtube         = ""
+	vimeo           = ""
+	vine            = ""
+	medium          = ""
+	wordpress       = ""
+	tumblr          = ""
+	xing            = ""
+	linkedin        = "kidonchu"
+	slideshare      = ""
+	stackoverflow   = "kidonchu"
+	reddit          = ""
+	pinterest       = ""
+	googleplus      = ""
+	facebook        = ""
+	facebook_admin  = ""
+	twitter_domain  = ""
+	twitter         = ""
+	email           = ""
+
 # parms.intro will appear on the sidebar
 # This is optional, but it's suggested to use
 [params.intro]
@@ -94,36 +124,3 @@ googleAnalytics = "UA-85719930-1"
 #     name = "About"
 #     url = "/about"
 #     weight = 3
-
-# Insert your username and the icon will apear on the page as long as
-# socialAppearAtTop or socialAppearAtBottom is set to true in the params area
-# The social media icons will appear on the sidebar
-[social]
-    github          = "kidonchu"
-    bitbucket       = ""
-    jsfiddle        = ""
-    codepen         = ""
-    foursquare      = ""
-    dribbble        = ""
-    deviantart      = ""
-    behance         = ""
-    flickr          = ""
-    instagram       = ""
-    youtube         = ""
-    vimeo           = ""
-    vine            = ""
-    medium          = ""
-    wordpress       = ""
-    tumblr          = ""
-    xing            = ""
-    linkedin        = "kidonchu"
-    slideshare      = ""
-    stackoverflow   = "kidonchu"
-    reddit          = ""
-    pinterest       = ""
-    googleplus      = ""
-    facebook        = ""
-    facebook_admin  = ""
-    twitter_domain  = ""
-    twitter         = ""
-    email           = ""
