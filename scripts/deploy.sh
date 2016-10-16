@@ -1,17 +1,6 @@
 #!/bin/bash
 set -e
 
-echo "Installing hugo..."
-go get -u -v github.com/spf13/hugo
-
-echo "Cloning themes..."
-git clone https://github.com/jpescador/hugo-future-imperfect ./themes/hugo-future-imperfect
-
-echo "Building static site..."
-hugo
-
-echo "Deploying to github page branch..."
-
 ### Variable definitions
 if [[ -z $SOURCE_BRANCH ]]; then
 	SOURCE_BRANCH="master"
@@ -31,13 +20,7 @@ fi
 if [[ -z $GIT_EMAIL ]]; then
 	GIT_EMAIL="kidonchu@gmail.com"
 fi
-REPO=$(git config remote.origin.url)
-SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
 SHA=$(git rev-parse --verify HEAD)
-
-echo "REPO: ${REPO}"
-echo "SSH_REPO: ${SSH_REPO}"
-echo "SHA: ${SHA}"
 
 ### Validations
 # Pull requests and commits to other branches shouldn't try to deploy
@@ -49,25 +32,25 @@ if [[ "$TRAVIS_BRANCH" != "$SOURCE_BRANCH" ]]; then
 	echo "Travis branch doesn't match with source branch; exiting."
 	exit 0
 fi
-if [ ! -d "$SOURCE_DIR" ]; then
-  echo "SOURCE_DIR ($SOURCE_DIR) does not exist, build the source directory before deploying"
-  exit 1
-fi
+# if [ ! -d "$SOURCE_DIR" ]; then
+#   echo "SOURCE_DIR ($SOURCE_DIR) does not exist, build the source directory before deploying"
+#   exit 1
+# fi
 
-# Get the deploy key by using Travis's stored variables to decrypt deploy_key.enc
 echo "Adding deploy key to ssh-agent..."
-ENCRYPTED_KEY_VAR="encrypted_${ENCRYPTION_LABEL}_key"
-echo "ENCRYPTED_KEY_VAR: ${ENCRYPTED_KEY_VAR}"
-ENCRYPTED_IV_VAR="encrypted_${ENCRYPTION_LABEL}_iv"
-echo "ENCRYPTED_IV_VAR: ${ENCRYPTED_IV_VAR}"
-ENCRYPTED_KEY=${!ENCRYPTED_KEY_VAR}
-echo "ENCRYPTED_KEY: ${ENCRYPTED_KEY}"
-ENCRYPTED_IV=${!ENCRYPTED_IV_VAR}
-echo "ENCRYPTED_IV: ${ENCRYPTED_IV}"
-openssl aes-256-cbc -K $ENCRYPTED_KEY -iv $ENCRYPTED_IV -in deploy_key.enc -out deploy_key -d
 chmod 600 deploy_key
 eval `ssh-agent -s`
 ssh-add deploy_key
+
+# Create public folder to put generated static site
+mkdir public
+cd public
+git clone https://github.com/kidonchu/somethingnew .
+git checkout $TARGET_BRANCH
+
+cd ..
+echo "Building static site..."
+hugo
 
 cd public
 echo "$(pwd)"
@@ -82,9 +65,15 @@ fi
 git config user.name "$GIT_NAME"
 git config user.email "$GIT_EMAIL"
 
+REPO=$(git config remote.origin.url)
+SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
+
+echo "REPO: $REPO"
+echo "SSH_REPO: $SSH_REPO"
+
 # Commit generated static site
 git add -A .
 git commit -m "Deploy to GitHub pages: ${SHA}"
 
-echo "Pushing changes to ${REPO} ${TARGET_BRANCH}"
-git push $REPO $TARGET_BRANCH
+echo "Pushing changes to ${SSH_REPO} ${TARGET_BRANCH}"
+git push $SSH_REPO $TARGET_BRANCH
