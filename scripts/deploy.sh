@@ -54,10 +54,27 @@ if [ ! -d "$SOURCE_DIR" ]; then
   exit 1
 fi
 
+# Get the deploy key by using Travis's stored variables to decrypt deploy_key.enc
+echo "Adding deploy key to ssh-agent..."
+ENCRYPTED_KEY_VAR="encrypted_${ENCRYPTION_LABEL}_key"
+echo "ENCRYPTED_KEY_VAR: ${ENCRYPTED_KEY_VAR}"
+ENCRYPTED_IV_VAR="encrypted_${ENCRYPTION_LABEL}_iv"
+echo "ENCRYPTED_IV_VAR: ${ENCRYPTED_IV_VAR}"
+ENCRYPTED_KEY=${!ENCRYPTED_KEY_VAR}
+echo "ENCRYPTED_KEY: ${ENCRYPTED_KEY}"
+ENCRYPTED_IV=${!ENCRYPTED_IV_VAR}
+echo "ENCRYPTED_IV: ${ENCRYPTED_IV}"
+openssl aes-256-cbc -K $ENCRYPTED_KEY -iv $ENCRYPTED_IV -in deploy_key.enc -out deploy_key -d
+chmod 600 deploy_key
+eval `ssh-agent -s`
+ssh-add deploy_key
+
 cd public
+echo "$(pwd)"
+echo "$(ls)"
 
 # If there are no changes to the compiled output
-if [ -z `git diff --exit-code`  ]; then
+if [ -z "$(git diff --exit-code)"  ]; then
 	echo "No changes to the output on this push; exiting."
 	exit 0
 fi
@@ -69,17 +86,6 @@ git config user.email "$GIT_EMAIL"
 git status
 git add -A .
 git commit -m "Deploy to GitHub pages: ${SHA}"
-
-# Get the deploy key by using Travis's stored variables to decrypt deploy_key.enc
-echo "Adding deploy key to ssh-agent..."
-ENCRYPTED_KEY_VAR="encrypted_${ENCRYPTION_LABEL}_key"
-ENCRYPTED_IV_VAR="encrypted_${ENCRYPTION_LABEL}_iv"
-ENCRYPTED_KEY=${!ENCRYPTED_KEY_VAR}
-ENCRYPTED_IV=${!ENCRYPTED_IV_VAR}
-openssl aes-256-cbc -K $ENCRYPTED_KEY -iv $ENCRYPTED_IV -in deploy_key.enc -out deploy_key -d
-chmod 600 deploy_key
-eval `ssh-agent -s`
-ssh-add deploy_key
 
 echo "Pushing changes to ${REPO} ${TARGET_BRANCH}"
 git push $REPO $TARGET_BRANCH
