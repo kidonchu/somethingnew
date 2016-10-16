@@ -7,6 +7,7 @@ description = "List of fun things I'd like to try"
 
 +++
 
+- hihi
 - hoho
 - Bake chocolate chip cookies
 - Bowling

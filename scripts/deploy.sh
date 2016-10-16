@@ -71,7 +71,7 @@ ssh-add deploy_key
 
 cd public
 echo "$(pwd)"
-echo "$(ls)"
+git status
 
 # If there are no changes to the compiled output
 if [ -z "$(git diff --exit-code)"  ]; then
@@ -83,7 +83,6 @@ git config user.name "$GIT_NAME"
 git config user.email "$GIT_EMAIL"
 
 # Commit generated static site
-git status
 git add -A .
 git commit -m "Deploy to GitHub pages: ${SHA}"
 
