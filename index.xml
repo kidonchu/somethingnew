@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Something New</title>
-    <link>https://kidonchu.github.io/somethingnew/index.xml</link>
+    <link>https://kidonchu.github.io/index.xml</link>
     <description>Recent content on Something New</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 12 Oct 2016 07:31:14 -0500</lastBuildDate>
-    <atom:link href="https://kidonchu.github.io/somethingnew/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kidonchu.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>TODO</title>
-      <link>https://kidonchu.github.io/somethingnew/todo/</link>
+      <link>https://kidonchu.github.io/todo/</link>
       <pubDate>Wed, 12 Oct 2016 07:31:14 -0500</pubDate>
       
-      <guid>https://kidonchu.github.io/somethingnew/todo/</guid>
+      <guid>https://kidonchu.github.io/todo/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Bake chocolate chip cookies&lt;/li&gt;
 &lt;li&gt;Bowling&lt;/li&gt;
@@ -51,10 +51,10 @@
     
     <item>
       <title>Intro</title>
-      <link>https://kidonchu.github.io/somethingnew/post/intro/</link>
+      <link>https://kidonchu.github.io/post/intro/</link>
       <pubDate>Tue, 11 Oct 2016 07:31:14 -0500</pubDate>
       
-      <guid>https://kidonchu.github.io/somethingnew/post/intro/</guid>
+      <guid>https://kidonchu.github.io/post/intro/</guid>
       <description>
 
 &lt;h3 id=&#34;having-fun&#34;&gt;Having Fun?&lt;/h3&gt;
@@ -77,7 +77,7 @@ digital stuff.&lt;/p&gt;
 &lt;p&gt;So, to freshen up, I decided to start a journal with a theme, &lt;strong&gt;SOMETHING NEW&lt;/strong&gt;. This will be the journal of
 my attempts to try something new every other week, or every week if my life permits. I have no idea
 what I would want to try in the next few weeks but I&amp;rsquo;m sure something will come up and I will have
-plenty in my &lt;a href=&#34;https://kidonchu.github.io/somethingnew/todo&#34;&gt;TODO&lt;/a&gt; list.&lt;/p&gt;
+plenty in my &lt;a href=&#34;https://kidonchu.github.io/todo&#34;&gt;TODO&lt;/a&gt; list.&lt;/p&gt;
 
 &lt;h3 id=&#34;definition-of-something-new&#34;&gt;Definition of &lt;em&gt;Something New&lt;/em&gt;&lt;/h3&gt;
 
