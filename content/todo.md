@@ -10,6 +10,7 @@ description = "List of fun things I'd like to try"
 - Bake chocolate chip cookies
 - Bowling
 - Camping
+- Caribbean Cruise
 - Create mug with clay
 - Dye my hair
 - Fly kite
@@ -17,10 +18,10 @@ description = "List of fun things I'd like to try"
 - Halloween with costume
 - Kayaking
 - Marathon
-- Paddleboarding
-- Paintbal shooting
+- Paddle boarding
+- Paintball shooting
 - Play Pandemic board game
-- Pumkin Carving
+- Pumpkin Carving
 - Reading novel
 - Rock climbing
 - Salar de Uyuni
@@ -36,3 +37,5 @@ description = "List of fun things I'd like to try"
 - Video recording with drone
 - Woodwork to create a table
 - Zorbing
+
+## DONE ##

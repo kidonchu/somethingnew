@@ -7,7 +7,7 @@ description = "Let there be FUN"
 
 +++
 
-### Having Fun? ###
+## Having Fun?
 
 The week started as normal. Just another Monday, feeling not too excited, with this irritating
 thought in my head that had been lingering for a while.
@@ -27,7 +27,7 @@ my attempts to try something new every other week, or every week if my life perm
 what I would want to try in the next few weeks but I'm sure something will come up and I will have
 plenty in my [TODO](/todo) list.
 
-### Definition of *Something New* ###
+### Definition of *Something New*
 
 Here are my definitions of *Something New*.
 
