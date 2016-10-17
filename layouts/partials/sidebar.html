@@ -24,7 +24,7 @@
                     <li><a href="{{ .RSSLink }}" type="application/rss+xml"
                         target="_blank" title="RSS" class="fa fa-rss"></a></li>
                 {{ end }}
-                {{ if .Site.Params.socialAppearAtTop }}
+                {{ if .Site.Params.socialtop }}
                     {{ partial "social" . }}
                 {{ end }}
             </ul>
@@ -89,7 +89,7 @@
                     <li><a href="{{ .RSSLink }}" type="application/rss+xml"
                         target="_blank" title="RSS" class="fa fa-rss"></a></li>
                 {{ end }}
-                {{ if .Site.Params.socialAppearAtBottom }}
+                {{ if .Site.Params.socialbottom }}
                     {{ partial "social" . }}
                 {{ end }}
             </ul>

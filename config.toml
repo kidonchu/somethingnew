@@ -1,6 +1,6 @@
 languageCode = "en-us"
-# baseurl = "https://kidonchu.github.io/somethingnew/"
-baseurl = "https://kidonchu.github.io/"
+baseurl = "https://kidonchu.github.io/somethingnew/"
+# baseurl = "https://kidonchu.github.io/"
 title = "Something New"
 theme = "hugo-future-imperfect"
 canonifyurls = true
@@ -12,8 +12,8 @@ googleAnalytics = "UA-85719930-1"
 [Params]
     description          = "Trying something new and writing about it"
     navbartitle          = "Something New"
-    socialAppearAtTop    = true
-    socialAppearAtBottom = true
+    socialtop    = true
+    socialbottom = true
     # set this to the section name if section is not post
     viewMorePostLink     = "/"
 
