@@ -15,10 +15,13 @@
       <pubDate>Wed, 12 Oct 2016 07:31:14 -0500</pubDate>
       
       <guid>https://kidonchu.github.io/somethingnew/todo/</guid>
-      <description>&lt;ul&gt;
+      <description>
+
+&lt;ul&gt;
 &lt;li&gt;Bake chocolate chip cookies&lt;/li&gt;
 &lt;li&gt;Bowling&lt;/li&gt;
 &lt;li&gt;Camping&lt;/li&gt;
+&lt;li&gt;Caribbean Cruise&lt;/li&gt;
 &lt;li&gt;Create mug with clay&lt;/li&gt;
 &lt;li&gt;Dye my hair&lt;/li&gt;
 &lt;li&gt;Fly kite&lt;/li&gt;
@@ -26,10 +29,10 @@
 &lt;li&gt;Halloween with costume&lt;/li&gt;
 &lt;li&gt;Kayaking&lt;/li&gt;
 &lt;li&gt;Marathon&lt;/li&gt;
-&lt;li&gt;Paddleboarding&lt;/li&gt;
-&lt;li&gt;Paintbal shooting&lt;/li&gt;
+&lt;li&gt;Paddle boarding&lt;/li&gt;
+&lt;li&gt;Paintball shooting&lt;/li&gt;
 &lt;li&gt;Play Pandemic board game&lt;/li&gt;
-&lt;li&gt;Pumkin Carving&lt;/li&gt;
+&lt;li&gt;Pumpkin Carving&lt;/li&gt;
 &lt;li&gt;Reading novel&lt;/li&gt;
 &lt;li&gt;Rock climbing&lt;/li&gt;
 &lt;li&gt;Salar de Uyuni&lt;/li&gt;
@@ -46,6 +49,8 @@
 &lt;li&gt;Woodwork to create a table&lt;/li&gt;
 &lt;li&gt;Zorbing&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h2 id=&#34;done&#34;&gt;DONE&lt;/h2&gt;
 </description>
     </item>
     
@@ -57,7 +62,7 @@
       <guid>https://kidonchu.github.io/somethingnew/post/intro/</guid>
       <description>
 
-&lt;h3 id=&#34;having-fun&#34;&gt;Having Fun?&lt;/h3&gt;
+&lt;h2 id=&#34;having-fun&#34;&gt;Having Fun?&lt;/h2&gt;
 
 &lt;p&gt;The week started as normal. Just another Monday, feeling not too excited, with this irritating
 thought in my head that had been lingering for a while.&lt;/p&gt;
