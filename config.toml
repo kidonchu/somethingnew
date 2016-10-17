@@ -10,21 +10,10 @@ paginate = 3
 googleAnalytics = "UA-85719930-1"
 
 [Params]
-    description          = "Trying something new and writing about it"
-    navbartitle          = "Something New"
+    description  = "Trying something new and writing about it"
+    navbartitle  = "Something New"
     socialtop    = true
     socialbottom = true
-    # set this to the section name if section is not post
-    viewMorePostLink     = "/"
-
-# Optional Params
-    categoriesByCount    = true
-    includeReadingTime   = false
-    # The set of favicons used are based on the write-up from this link:
-    # https://github.com/audreyr/favicon-cheat-sheet
-    # Please see the favicon partial template for more information
-    loadFavicon          = false
-    faviconVersion       = ""
 [Params.share]
 	twitter     = false
 	googleplus  = false
@@ -35,33 +24,8 @@ googleAnalytics = "UA-85719930-1"
 	email       = false
 [Params.social]
 	github          = "kidonchu"
-	bitbucket       = ""
-	jsfiddle        = ""
-	codepen         = ""
-	foursquare      = ""
-	dribbble        = ""
-	deviantart      = ""
-	behance         = ""
-	flickr          = ""
-	instagram       = ""
-	youtube         = ""
-	vimeo           = ""
-	vine            = ""
-	medium          = ""
-	wordpress       = ""
-	tumblr          = ""
-	xing            = ""
 	linkedin        = "kidonchu"
-	slideshare      = ""
 	stackoverflow   = "kidonchu"
-	reddit          = ""
-	pinterest       = ""
-	googleplus      = ""
-	facebook        = ""
-	facebook_admin  = ""
-	twitter_domain  = ""
-	twitter         = ""
-	email           = ""
 [Params.intro]
     header    = "Something New"
     paragraph = "Trying out something new and writing about it"
@@ -73,13 +37,6 @@ googleAnalytics = "UA-85719930-1"
     width     = ""
     alt       = "Hugo Future Imperfect"
 
-# Adjust the amount of recent posts on the sidebar.
-# This is optional. The default value 5 will be used
-# [params.postAmount]
-#     sidebar = 2
-
-# Set up your menu items in the navigation bar
-# You can use identifier to prepend a font awesome icon to your text
 [[menu.main]]
     name = "Home"
     url = "/"
@@ -91,8 +48,3 @@ googleAnalytics = "UA-85719930-1"
     url = "/todo"
 	identifier = "fa fa-list"
     weight = 2
-
-# [[menu.main]]
-#     name = "About"
-#     url = "/about"
-#     weight = 3
