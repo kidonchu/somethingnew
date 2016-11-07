@@ -9,6 +9,7 @@ description = "List of fun things I'd like to try"
 
 ## TO BE DONE
 
+- Go to Chicago Cups game
 - Bake chocolate chip cookies
 - Bowling
 - Camping
@@ -23,7 +24,6 @@ description = "List of fun things I'd like to try"
 - Paddle boarding
 - Paintball shooting
 - Play Pandemic board game
-- Pumpkin Carving
 - Reading novel
 - Rock climbing
 - Salar de Uyuni
@@ -42,3 +42,4 @@ description = "List of fun things I'd like to try"
 - Zorbing
 
 ## DONE
+- Pumpkin Carving
