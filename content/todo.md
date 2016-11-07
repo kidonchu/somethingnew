@@ -7,6 +7,8 @@ description = "List of fun things I'd like to try"
 
 +++
 
+## TO BE DONE
+
 - Bake chocolate chip cookies
 - Bowling
 - Camping
@@ -35,7 +37,8 @@ description = "List of fun things I'd like to try"
 - Swimming
 - Take photos of 10 things that make me happy
 - Video recording with drone
+- Wine with *Grilling Cheese*
 - Woodwork to create a table
 - Zorbing
 
-## DONE ##
+## DONE

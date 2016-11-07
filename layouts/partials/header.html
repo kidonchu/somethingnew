@@ -44,13 +44,18 @@
              to keep the deprecated param. -->
         {{ if isset .Site.Params "minifiedFilesCSS" }}
             {{ $.Scratch.Set "cssFiles" .Site.Params.minifiedFilesCSS }}
-        {{ else if isset .Site.Params "customCSS" }}
+        {{ else if isset .Site.Params "customcss" }}
             {{ $.Scratch.Set "cssFiles" .Site.Params.customcss }}
         {{ else }}
             {{ $.Scratch.Set "cssFiles" false }}
         {{ end }}
 
-		  {{ $.Scratch.Get "cssFiles" }}
+		  <meta name="test1" content="{{ .Site.Params.customcss }}">
+		  <meta name="test2" content='{{ $.Scratch.Get "cssFiles" }}'>
+		  
+		  {{ if in ($.Scratch.Get "cssFiles") "default" }}
+		  <meta name="test3" content="default in cssFiles">
+		  {{ end }}
 
         <!-- If the value "default" is passed into the param then we will first
              load the standard css files associated with the theme -->

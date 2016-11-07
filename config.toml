@@ -1,6 +1,6 @@
 languageCode = "en-us"
-baseurl = "https://kidonchu.github.io/somethingnew/"
-# baseurl = "https://kidonchu.github.io/"
+# baseurl = "https://kidonchu.github.io/somethingnew/"
+baseurl = "https://kidonchu.github.io/"
 title = "Something New"
 theme = "hugo-future-imperfect"
 canonifyurls = true
@@ -14,6 +14,7 @@ googleAnalytics = "UA-85719930-1"
     navbartitle  = "Something New"
     socialtop    = true
     socialbottom = true
+	customcss    = ["default", "/css/custom.css"]
 [Params.share]
 	twitter     = false
 	googleplus  = false
